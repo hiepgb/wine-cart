@@ -1,0 +1,58 @@
+.header-top {
+    height: var(--default-layout-height);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: var(--default-layout-width);
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .social {
+        list-style: none;
+        display: flex;
+        height: var(--default-layout-height);
+        align-items: center;
+        color: #fff;
+
+        li {
+            padding-right: 10px;
+
+            &:hover {
+                color: var(--default-color-hover);
+                transition: 0.4s;
+            }
+        }
+    }
+
+    .link {
+        list-style: none;
+        display: flex;
+        height: var(--default-layout-height);
+        align-items: center;
+
+        .sign-in {
+            margin-right: 15px;
+            color: var(--default-color);
+
+            &:hover {
+                color: var(--default-color-hover);
+                transition: 0.4s;
+            }
+        }
+
+        .sign-up {
+            color: var(--default-color);
+
+            &:hover {
+                color: var(--default-color-hover);
+                transition: 0.4s;
+            }
+        }
+    }
+}
