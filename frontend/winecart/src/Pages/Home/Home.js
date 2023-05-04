@@ -1,9 +1,15 @@
+import Category from '~/Layouts/components/Category/Category';
+import SliderBanner from '~/Layouts/components/Slider/SliderBanner/SliderBanner';
+import SliderFlash from '~/Layouts/components/Slider/SliderFlash/SliderFlash';
+
 function Home() {
-    return (
-        <div>
-            <h1>home</h1>
-        </div>
-    );
+  return (
+    <div>
+      <SliderBanner />
+      <SliderFlash />
+      <Category />
+    </div>
+  );
 }
 
 export default Home;

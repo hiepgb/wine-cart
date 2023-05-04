@@ -2,6 +2,7 @@
     height: var(--default-layout-height);
     display: flex;
     justify-content: center;
+    background-color: var(--default-background-color-header);
 }
 
 .container {
@@ -39,6 +40,7 @@
         .sign-in {
             margin-right: 15px;
             color: var(--default-color);
+            font-size: 13px;
 
             &:hover {
                 color: var(--default-color-hover);
@@ -48,6 +50,7 @@
 
         .sign-up {
             color: var(--default-color);
+            font-size: 13px;
 
             &:hover {
                 color: var(--default-color-hover);
