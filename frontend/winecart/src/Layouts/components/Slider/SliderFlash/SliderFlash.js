@@ -12,11 +12,11 @@ const cx = classNames.bind(styles);
 
 function SliderFlash() {
   const settings = {
-    dots: true,
-    infinite: true,
+    dots: false,
+    infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     appendDots: (dots) => {
       return <ul>{dots}</ul>;
