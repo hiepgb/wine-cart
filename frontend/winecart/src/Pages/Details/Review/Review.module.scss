@@ -1,0 +1,93 @@
+.review-content {
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #ffeae0;
+    border-radius: 8px;
+    z-index: 1;
+    box-shadow: 0 3px 24px rgba(0, 0, 0, .04);
+    margin-top: 0;
+
+    h4 {
+        font-size: 26px;
+        line-height: 1.4;
+        margin: 0 0 20px;
+        font-weight: 700;
+    }
+}
+
+
+.rating {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-left: 10px;
+        color: #848486;
+        font-size: 13px;
+    }
+}
+
+.comment-form {
+    margin-bottom: 40px;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.full-name {
+    width: 100%;
+    padding-right: 15px;
+
+    // :global(.MuiInputBase-root) {
+    //     height: 50px;
+    //     padding: 8px 15px;
+    //     border-radius: 0;
+    //     border-radius: 25px;
+    //     width: 100%;
+    //     color: #6e6e6e;
+    //     background-color: #fff;
+    //     letter-spacing: 0.1px;
+    //     font-size: 14px;
+
+    //     &:global(.Mui-focused) {
+    //         border: none;
+    //     }
+    // }
+}
+
+.email {
+    width: 100%;
+    padding-left: 15px;
+}
+
+.bottom {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+    .comment {
+        height: 60px !important;
+        padding: 8px 15px;
+        width: 100%;
+        color: #6e6e6e;
+        background-color: #fff;
+        letter-spacing: 0.1px;
+        font-size: 14px;
+        border-radius: 5px;
+
+        &:focus {
+            outline: none !important;
+            border: 1px solid #115191;
+        }
+    }
+}
+
+.comment-list {
+    :global(.MuiPagination-ul) {
+        justify-content: center;
+    }
+}

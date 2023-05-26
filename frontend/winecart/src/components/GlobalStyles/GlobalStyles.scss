@@ -6,6 +6,8 @@
     --default-color: #fff;
     --default-background-color: #fff;
     --default-color-hover: #a74717;
+    --default-bg-color-hover: #18181D;
+    --default-bg-color-button: #a74717;
     --color-pale-skin: #ffeae0;
     --color-grey: #838383;
     --default-background-color-header: #c96838;
@@ -36,11 +38,12 @@ button,
 input,
 [tabindex] {
     outline: none;
-    border: none;
+    // border: none;
 }
 
 a[href] {
     color: var(--text-color);
     text-decoration: none;
     font-size: 14px;
+    outline: none;
 }

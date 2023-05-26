@@ -1,13 +1,41 @@
+import { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from '~/Pages/Home/Home';
-import Header from './Layouts/components/Header/Header';
+import { publicRoutes } from './routes';
+import DefaultLayout from './components/Layouts/DefaultLayout/DefaultLayout';
 function App() {
   return (
     <Router>
-      <Header />
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
+          {publicRoutes.map((route, index) => {
+            const Page = route.component;
+            let Layout = DefaultLayout;
+
+            if (route.layout) {
+              Layout = route.layout;
+            } else if (route.layout === null) {
+              Layout = Fragment;
+            }
+
+            return (
+              <Route
+                key={index}
+                path={route.path}
+                element={
+                  <Layout>
+                    <Page />
+                  </Layout>
+                }
+              >
+                {route.childRoute?.map((item, childIndex) => {
+                  const ChildComponent = route.path + item.path;
+
+                  const ChildRoute = item.component;
+                  return <Route key={childIndex} path={ChildComponent} element={<ChildRoute />} />;
+                })}
+              </Route>
+            );
+          })}
         </Routes>
       </div>
     </Router>

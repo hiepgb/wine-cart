@@ -1,0 +1,22 @@
+.nav-link {
+    display: flex;
+    flex-direction: column;
+
+
+    a {
+        border-radius: 8px;
+        padding: 12px 20px;
+        background-color: #ffeae0;
+        font-weight: 600;
+        color: #18181D !important;
+    }
+
+    a:first-child {
+        margin-bottom: 10px;
+    }
+
+
+    .menu-item.active {
+        background-color: #a74717;
+    }
+}
